@@ -49,6 +49,22 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beginner_tutorials/action" TYPE FILE FILES "/home/alex/catkin_ws/src/beginner_tutorials/action/timer.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beginner_tutorials/msg" TYPE FILE FILES
+    "/home/alex/catkin_ws/devel/share/beginner_tutorials/msg/timerAction.msg"
+    "/home/alex/catkin_ws/devel/share/beginner_tutorials/msg/timerActionGoal.msg"
+    "/home/alex/catkin_ws/devel/share/beginner_tutorials/msg/timerActionResult.msg"
+    "/home/alex/catkin_ws/devel/share/beginner_tutorials/msg/timerActionFeedback.msg"
+    "/home/alex/catkin_ws/devel/share/beginner_tutorials/msg/timerGoal.msg"
+    "/home/alex/catkin_ws/devel/share/beginner_tutorials/msg/timerResult.msg"
+    "/home/alex/catkin_ws/devel/share/beginner_tutorials/msg/timerFeedback.msg"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beginner_tutorials/cmake" TYPE FILE FILES "/home/alex/catkin_ws/build/beginner_tutorials/catkin_generated/installspace/beginner_tutorials-msg-paths.cmake")
 endif()
 
